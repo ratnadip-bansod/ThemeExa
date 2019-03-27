@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/customText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text 1..." />
+
+    <TextView
+        android:id="@+id/bigText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customText"
+        android:text="Text 2..." />
+
+    <Button
+        android:id="@+id/originalTextButton"
+        android:layout_below="@id/bigText"
+        style="@style/ButtonStyle"
+        android:text="original theme 1" />
+
+    <Button
+        android:id="@+id/simpleTextButton"
+        android:layout_below="@id/originalTextButton"
+        style="@style/ButtonStyle"
+        android:text="theme2" />
+
+    <Button
+        android:id="@+id/bigTextButton"
+        android:layout_below="@id/simpleTextButton"
+        style="@style/ButtonStyle"
+        android:text="theme3" />
+
+</RelativeLayout>
